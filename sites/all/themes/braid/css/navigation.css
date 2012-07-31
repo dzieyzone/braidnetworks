@@ -9,21 +9,12 @@
  */
 
 ul li.expanded {
-  *list-style-image: url(../images/menu-expanded.png);
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
-  list-style-type: circle;
 }
 
 ul li.collapsed {
-  *list-style-image: url(../images/menu-collapsed.png); /* LTR */
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC'); /* LTR */
-  list-style-type: disc;
 }
 
 ul li.leaf {
-  *list-style-image: url(../images/menu-leaf.png);
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
-  list-style-type: square;
 }
 
 /*
@@ -31,7 +22,7 @@ ul li.leaf {
  */
 
 li a.active {
-  color: #000;
+  color: #002d62;
 }
 
 /*
@@ -82,7 +73,16 @@ li a.active {
 }
 
 #secondary-menu {
-  float: right; /* LTR */
+}
+#secondary-menu ul{
+  margin: 0;
+  padding: 0;
+}
+#secondary-menu li{
+  font-size: 100%;
+  font-weight: bold;
+  font-family: 'TradeGothicLTStdBoldNo.2', Arial, Helvetica, Tahoma, sans-serif;
+  color: #002D62;
 }
 
 /*

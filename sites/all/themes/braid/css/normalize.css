@@ -125,47 +125,49 @@ html {
   font-size: 87.5%; /* 16px x .875 = 14px */
 
   /* Use a 16px base font size */
-  font-size: 100%; /* 1 */
+  /*font-size: 75%; /* 1 */
 
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
 
   /* Establish a vertical rhythm. */
-  line-height: 1.5em;
+  line-height: 140%;
 }
-
-/*
- * Instead of relying on the fonts that are available on a user's computer, you
- * can use web fonts which, like images, are resources downloaded to the user's
- * browser. Because of the bandwidth and rendering resources required, web fonts
- * should be used with care.
- *
- * Numerous resources for web fonts can be found on Google. Here are a few
- * websites where you can find Open Source fonts to download:
- * - http://www.fontsquirrel.com/fontface
- * - http://www.theleagueofmoveabletype.com
- *
- * In order to use these fonts, you will need to convert them into formats
- * suitable for web fonts. We recommend the free-to-use Font Squirrel's
- * Font-Face Generator:
- *   http://www.fontsquirrel.com/fontface/generator
- *
- * The following is an example @font-face declaration. This font can then be
- * used in any ruleset using a property like this:  font-family: Example, serif;
 
 @font-face {
-  font-family: 'Example';
-  src: url('../fonts/example.eot');
-  src: url('../fonts/example.eot?iefix') format('eot'),
-    url('../fonts/example.woff') format('woff'),
-    url('../fonts/example.ttf') format('truetype'),
-    url('../fonts/example.svg#webfontOkOndcij') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'TradeGothicCondensed';
+    src: url('tradegothic/trade_gothic_condensed_no._18-webfont.eot');
+    src: url('tradegothic/trade_gothic_condensed_no._18-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tradegothic/trade_gothic_condensed_no._18-webfont.woff') format('woff'),
+         url('tradegothic/trade_gothic_condensed_no._18-webfont.ttf') format('truetype'),
+         url('tradegothic/trade_gothic_condensed_no._18-webfont.svg#TradeGothicCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
- */
+@font-face {
+    font-family: 'TradeGothicLTStdBoldNo.2';
+    src: url('tradegothicbold/trade_gothic_lt_std_bold_no._2-webfont.eot');
+    src: url('tradegothicbold/trade_gothic_lt_std_bold_no._2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tradegothicbold/trade_gothic_lt_std_bold_no._2-webfont.woff') format('woff'),
+         url('tradegothicbold/trade_gothic_lt_std_bold_no._2-webfont.ttf') format('truetype'),
+         url('tradegothicbold/trade_gothic_lt_std_bold_no._2-webfont.svg#TradeGothicLTStdBoldNo.2') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'TradeGothicOblique';
+    src: url('tradegothicoblique/trade_gothic_oblique-webfont.eot');
+    src: url('tradegothicoblique/trade_gothic_oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tradegothicoblique/trade_gothic_oblique-webfont.woff') format('woff'),
+         url('tradegothicoblique/trade_gothic_oblique-webfont.ttf') format('truetype'),
+         url('tradegothicoblique/trade_gothic_oblique-webfont.svg#TradeGothicOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
@@ -194,12 +196,12 @@ textarea {
   font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
-
+  "Trebuchet MS", Helvetica, sans-serif
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 
    */
 
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: TradeGothicOblique, Arial, Helvetica, Tahoma, sans-serif;
 }
 
 /*
@@ -221,16 +223,23 @@ body {
  */
 
 a:link {
+  text-decoration: none;
 }
 
+a,
 a:visited {
+  color: #6d6e71;
 }
 
 a:hover,
 a:focus {
 }
 
+b,
+strong,
+h2,
 a:active {
+  color: #002D62;
 }
 
 /*
@@ -268,47 +277,57 @@ a:active {
  */
 
 h1 {
-  font-size: 2em;
-  /* Sets the line height to 2 units of vertical rhythm */
-  line-height: 1.5em; /* 3rem / 2em = 1.5em */
-  /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.75em; /* 1.5rem / 2em = .75em */
-  margin-bottom: 0.75em;
+  font-size: 140%;
+  line-height: 140%; /* 3rem / 2em = 1.5em */
+  margin: 0;
+  color: #5d9732;
+}
+
+h1#page-title {
+  position: absolute;
+  left: -30px;
+  background: #808080;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #FFF;
+  font-size: 160%;
+  padding: 5px 55px 5px 25px;
+  top: 0;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.5em;
-  line-height: 2em; /* 3rem / 1.5em = 2em */
-  margin-top: 1em; /* 1.5rem / 1.5em = 1em */
-  margin-bottom: 1em;
+  font-size: 130%;
+  line-height: 130%;
+  margin: 0;
 }
 
 h3 {
-  font-size: 1.17em;
-  line-height: 1.282em; /* 1.5rem / 1.17em = 1.282em */
-  margin-top: 1.282em;
-  margin-bottom: 1.282em;
+  font-size: 120%;
+  line-height: 120%;
+  margin: 0;
 }
 
 h4 {
-  font-size: 1em;
-  line-height: 1.5em; /* 1.5rem / 1em = 1.5em */
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 110%;
+  line-height: 110%;
+  margin: 0;
 }
 
 h5 {
-  font-size: 0.83em;
-  line-height: 1.807em; /* 1.5rem / 0.83em = 1.807em */
-  margin-top: 1.807em;
-  margin-bottom: 1.807em;
+  font-size: 100%;
+  line-height: 100%;
+  margin: 0;
 }
 
 h6 {
-  font-size: 0.75em;
-  line-height: 2em; /* 1.5rem / .75em = 2em */
-  margin-top: 2em;
-  margin-bottom: 2em;
+  font-size: 90%;
+  line-height: 100%;
+  margin: 0;
 }
 
 /* Thematic break */
@@ -332,10 +351,10 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-
 b,
 strong {
   font-weight: bold;
+  font-family: 'TradeGothicLTStdBoldNo.2', Arial, Helvetica, Tahoma, sans-serif;
 }
 
 blockquote {
@@ -367,7 +386,7 @@ mark {
 p,
 pre {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 0;
+  margin: 10px 0;
 }
 
 /*
@@ -381,8 +400,8 @@ kbd,
 samp,
 tt,
 var {
-  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
-  _font-family: 'courier new', monospace;
+  font-family: 'Myriad Pro', Arial, Helvetica, Tahoma, sans-serif;
+  _font-family: 'Myriad Pro', monospace;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -457,11 +476,15 @@ ol,
 ul,
 .item-list ul /* Drupal override */ {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .item-list ul li { /* Drupal override */
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 dd {

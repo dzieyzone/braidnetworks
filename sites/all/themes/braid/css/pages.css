@@ -18,13 +18,23 @@ body {
   background: #808080;
 }
 
+html.CSS1Compat body,
+body.cke_show_borders {
+  background: #FFF;
+}
+
 #page {
   background: #FFF;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  -webkit-box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 50);
-  box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 50);
+  -webkit-box-shadow:  5px 5px 10px -5px rgba(0, 0, 0, 50);
+  box-shadow:  5px 5px 10px -5px rgba(0, 0, 0, 50);
+  margin-top: 20px;
+}
+#page-inner {
+  padding: 30px;
+  position: relative;
 }
 
 /*
@@ -50,6 +60,15 @@ body {
  */
 
 #header {
+  padding-bottom: 30px;
+}
+#header .header-asset {
+  float: left;
+  width: 110px;
+}
+
+#header .header-content {
+  float:left;
 }
 
 #logo { /* Wrapping link for logo */
@@ -62,7 +81,17 @@ body {
 }
 
 #name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
+  position: absolute;
+  right: -30px;
+  background: #002D62;
+  line-height: 0;
+  padding: 10px 35px 10px 40px;
+  -webkit-box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 50);
+  box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 50);
+}
+#name-and-slogan,
+#name-and-slogan h2 {
+  color: #FFF;
 }
 
 #site-name { /* The name of the website */
@@ -82,11 +111,6 @@ body {
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 1em;
-}
-
-.region-header { /* Wrapper for any blocks placed in the header region */
-  clear: both; /* Clear the logo */
 }
 
 /*
@@ -165,6 +189,8 @@ tr.error { /* High priority messages. See also the .error declaration below. */
 }
 
 .tabs { /* See also the tabs.css file. */
+  position: absolute;
+  top: 0;
 }
 
 .region-help { /* Help text on a page */
@@ -234,5 +260,8 @@ span.field-label { /* The inline field label used by the Fences module */
  * Page bottom
  */
 
-.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+.region-bottom {
+  padding: 10px 20px 0 20px;
+  font-size: 80%;
+  color: #FFF;
 }
