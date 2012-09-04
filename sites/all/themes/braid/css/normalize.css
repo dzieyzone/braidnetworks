@@ -740,3 +740,7 @@ th {
 tbody {
   border-top: none;
 }
+
+.green {
+	color: #5e9732;
+}

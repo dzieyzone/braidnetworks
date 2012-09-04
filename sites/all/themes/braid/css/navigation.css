@@ -74,6 +74,9 @@ li a.active {
 
 #secondary-menu {
 }
+body.page-node-6 #secondary-menu{
+	position:inherit;
+}
 #secondary-menu ul{
   margin: 0;
   padding: 0;
@@ -83,6 +86,7 @@ li a.active {
   font-weight: bold;
   font-family: 'TradeGothicLTStdBoldNo.2', Arial, Helvetica, Tahoma, sans-serif;
   color: #002D62;
+  padding: 5px 0;
 }
 
 /*

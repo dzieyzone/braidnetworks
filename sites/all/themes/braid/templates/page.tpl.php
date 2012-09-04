@@ -1,4 +1,4 @@
-<div id="page">
+<div id="page" class="container-19">
   <div id="page-inner">
     <header id="header" role="banner">
       <div class="region header-asset clearfix">
@@ -97,6 +97,6 @@
   <?php print render($page['footer']); ?>
 
 </div><!-- /#page -->
-<div id="page-bottom" class="clearfix">
+<div id="page-bottom" class="clearfix container-19">
 <?php print render($page['bottom']); ?>
 </div>

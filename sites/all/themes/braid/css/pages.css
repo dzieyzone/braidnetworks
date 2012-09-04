@@ -7,34 +7,33 @@
  * ul.links, .pager, .more-link, etc.
  */
 
-
 /*
  * Body
  */
 
 body {
-  margin: 0;
-  padding: 0;
-  background: #808080;
+	margin: 0;
+	padding: 0;
+	background: #808080;
 }
 
-html.CSS1Compat body,
-body.cke_show_borders {
-  background: #FFF;
+html.CSS1Compat body, body.cke_show_borders {
+	background: #FFF;
 }
 
 #page {
-  background: #FFF;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  -webkit-box-shadow:  5px 5px 10px -5px rgba(0, 0, 0, 50);
-  box-shadow:  5px 5px 10px -5px rgba(0, 0, 0, 50);
-  margin-top: 20px;
+	background: #FFF;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 50);
+	box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 50);
+	margin-top: 20px;
+  min-height: 650px;
 }
 #page-inner {
-  padding: 30px;
-  position: relative;
+	padding: 30px;
+	position: relative;
 }
 
 /*
@@ -43,16 +42,15 @@ body.cke_show_borders {
  */
 
 #skip-link {
-  margin: 0;
+	margin: 0;
 }
-#skip-link a,
-#skip-link a:visited {
-  display: block;
-  width: 100%;
-  padding: 2px 0 3px 0;
-  text-align: center;
-  background-color: #666;
-  color: #fff;
+#skip-link a, #skip-link a:visited {
+	display: block;
+	width: 100%;
+	padding: 2px 0 3px 0;
+	text-align: center;
+	background-color: #666;
+	color: #fff;
 }
 
 /*
@@ -60,57 +58,54 @@ body.cke_show_borders {
  */
 
 #header {
-  padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 #header .header-asset {
-  float: left;
-  width: 110px;
+	float: left;
+	width: 110px;
 }
 
 #header .header-content {
-  float:left;
+	float: left;
 }
 
-#logo { /* Wrapping link for logo */
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0;
+#logo {/* Wrapping link for logo */
+	float: left; /* LTR */
+	margin: 0;
+	padding: 0;
 }
 #logo img {
-  vertical-align: bottom;
+	vertical-align: bottom;
 }
 
-#name-and-slogan { /* Wrapper for website name and slogan */
-  position: absolute;
-  right: -30px;
-  background: #002D62;
-  line-height: 0;
-  padding: 10px 35px 10px 40px;
-  -webkit-box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 50);
-  box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 50);
+#name-and-slogan {/* Wrapper for website name and slogan */
+	position: absolute;
+	right: -30px;
+	background: #002D62;
+	line-height: 0;
+	padding: 10px 35px 10px 40px;
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 50);
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 50);
 }
-#name-and-slogan,
-#name-and-slogan h2 {
-  color: #FFF;
-}
-
-#site-name { /* The name of the website */
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
-}
-#site-name a:link,
-#site-name a:visited {
-  color: #000;
-  text-decoration: none;
-}
-#site-name a:hover,
-#site-name a:focus {
-  text-decoration: underline;
+#name-and-slogan, #name-and-slogan h2 {
+	color: #FFF;
 }
 
-#site-slogan { /* The slogan (or tagline) of a website */
-  margin: 0;
+#site-name {/* The name of the website */
+	margin: 0;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+#site-name a:link, #site-name a:visited {
+	color: #000;
+	text-decoration: none;
+}
+#site-name a:hover, #site-name a:focus {
+	text-decoration: underline;
+}
+
+#site-slogan {/* The slogan (or tagline) of a website */
+	margin: 0;
 }
 
 /*
@@ -130,17 +125,17 @@ body.cke_show_borders {
 .region-highlighted {
 }
 
-.breadcrumb { /* The path to the current page in the form of a list of links */
+.breadcrumb {/* The path to the current page in the form of a list of links */
 }
 .breadcrumb ol {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 .breadcrumb li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 h1.title, /* The title of the page */
@@ -148,105 +143,50 @@ h2.node-title, /* Title of a piece of content when it is given in a list of cont
 h2.block-title, /* Block title */
 h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
-h3.title { /* Comment title */
-  margin: 0;
+h3.title {/* Comment title */
+	margin: 0;
 }
 
-tr.even { /* Some tables have rows marked even or odd. */
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+tr.even {/* Some tables have rows marked even or odd. */
+	/* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
 
 tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+	/* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
 
-div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
-  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+div.messages {/* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+	margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
 }
 div.messages ul {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-div.status { /* Normal priority messages */
+.tabs {/* See also the tabs.css file. */
+	position: absolute;
+	top: 0;
 }
 
-div.warning,
-tr.warning { /* Medium priority messages */
-  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
-}
-
-div.error,
-tr.error { /* High priority messages. See also the .error declaration below. */
-}
-
-.error { /* Errors that are separate from div.messages status messages. */
-  /* color: #e55; */ /* Drupal core uses a #e55 background */
-}
-
-.warning { /* Warnings that are separate from div.messages status messages. */
-  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
-}
-
-.tabs { /* See also the tabs.css file. */
-  position: absolute;
-  top: 0;
-}
-
-.region-help { /* Help text on a page */
-}
-
-.more-help-link { /* Link to more help */
-}
-
-.region-content { /* Wrapper for the actual page content */
-}
-
-ul.inline { /* List of links generated by theme_links() */
-  display: inline;
-  padding: 0;
+ul.inline {/* List of links generated by theme_links() */
+	display: inline;
+	padding: 0;
 }
 ul.inline li {
-  display: inline;
-  list-style-type: none;
-  padding: 0 1em 0 0; /* LTR */
+	display: inline;
+	list-style-type: none;
+	padding: 0 1em 0 0; /* LTR */
 }
 
-span.field-label { /* The inline field label used by the Fences module */
-  padding: 0 1em 0 0; /* LTR */
+span.field-label {/* The inline field label used by the Fences module */
+	padding: 0 1em 0 0; /* LTR */
 }
 
-.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
-  padding: 0;
+.item-list .pager {/* A list of page numbers when more than 1 page of content is available */
+	padding: 0;
 }
-.item-list .pager li { /* Each page number in the pager list */
-  padding: 0 0.5em;
-}
-
-.feed-icon { /* The link to the RSS or Atom feed for the current list of content */
-}
-
-.more-link { /* Aggregator, blog, and forum more link */
-}
-
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-
-.region-sidebar-first {
-}
-
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-
-.region-sidebar-second {
+.item-list .pager li {/* Each page number in the pager list */
+	padding: 0 0.5em;
 }
 
 /*
@@ -261,7 +201,35 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 .region-bottom {
-  padding: 10px 20px 0 20px;
-  font-size: 80%;
-  color: #FFF;
+	padding: 10px 20px 0 20px;
+	font-size: 80%;
+	color: #FFF;
+}
+
+body.front #page {
+  background: #FFF url('../images/bg-front.jpg') no-repeat bottom right;
+}
+body.page-node-2 #page {
+  background: #FFF url('../images/bg-about.jpg') no-repeat bottom right;	
+}
+body.page-node-7 #secondary-menu,
+body.page-node-5 #secondary-menu,
+body.page-node-2 #secondary-menu {
+	margin-top: 50px;
+}
+body.page-node-4 #page {
+  background: #FFF url('../images/bg-expertise.jpg') no-repeat bottom right;	
+}
+body.page-node-5 #page {
+  background: #FFF url('../images/bg-our-people.jpg') no-repeat bottom right;	
+}
+body.page-node-6 #page {
+  background: #FFF url('../images/bg-service-advantage.jpg') no-repeat bottom right;	
+}
+body.page-node-7 #page {
+  background: #FFF url('../images/bg-vision.jpg') no-repeat bottom right;
+  min-height: 550px;
+}
+body.page-node-8 #main {
+  padding-right: 90px;
 }

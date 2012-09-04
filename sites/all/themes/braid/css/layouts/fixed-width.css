@@ -1,28 +1,3 @@
-/**
- * @file
- * Positioning for a fixed-width, desktop-centric layout.
- *
- * Define CSS classes to create a table-free, 3-column, 2-column, or single
- * column layout depending on whether blocks are enabled in the left or right
- * columns.
- *
- * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
- */
-
-
-/*
- * Center the page.
- */
-
-#page,
-#page-bottom {
-  /* If you want to make the page a fixed width and centered in the viewport,
-   * this is the standards-compliant way to do that. */
-  margin-left: auto;
-  margin-right: auto;
-  width: 740px;
-}
-
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
